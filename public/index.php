@@ -16,14 +16,14 @@
       <div class="form-group">
         
       <div class="input-div"></div>
-        <img src="/images/user.png" alt="Icone utilisateur" />
+        <img class="images-input"  src="/images/user.png" />
         <input type="text" name="username" placeholder="Nom d'utilisateur" />
       </div>
       <div class="form-group">
 
     <div class="input-div"></div>
 
-        <img src="/images/password.png" />
+        <img  src="/images/password.png" />
         <input type="password" name="password" placeholder="Mot de passe" />
       </div>
       <button type="submit">Se connecter</button>

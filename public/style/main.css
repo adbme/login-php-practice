@@ -8,7 +8,7 @@ body {
     background-color: #282828;
 }
 
-/* Pour centrer la div sur la page */
+
 .container {
     display: flex;
     justify-content: center;
@@ -20,7 +20,7 @@ body {
 }
 
 
-/* Pour le formulaire et les champs */
+
 .form {
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@ body {
 }
 
 .input-div {
-
+    transition: 0.3s;
     margin-right: -75px;
     background-color: black;
     height: 83px;
@@ -57,7 +57,7 @@ input {
     font-size: 25px;
 }
 
-/* Pour le bouton de connexion */
+
 button {
     background-color: #4CAF50;
     color: white;
@@ -66,9 +66,15 @@ button {
     border-radius: 5px;
     cursor: pointer;
     align-self: flex-end;
+    transition: 0.3s;
 }
 
-/* Pour le lien de création de compte */
+button:hover {
+    padding: 20px 30px;
+    background-color: #41bd45;
+}
+
+
 .signup-link {
     margin-top: 20px;
 }
