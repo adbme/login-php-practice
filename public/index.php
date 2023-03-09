@@ -12,7 +12,7 @@
 <div class="container">
 
   <div class="form">
-    <form>
+    <form method="POST" action="/login.php">
       <div class="form-group">
         
       <div class="input-div"></div>
@@ -26,7 +26,7 @@
         <img  src="/images/password.png" />
         <input type="password" name="password" placeholder="Mot de passe" />
       </div>
-      <button type="submit">Se connecter</button>
+      <button type="submit" name="submit">Se connecter</button>
     </form>
     <div class="signup-link">
       <a href="#">Créer un compte</a>

@@ -70,7 +70,7 @@ button {
 }
 
 button:hover {
-    padding: 20px 30px;
+    transform: scale(1.2);
     background-color: #41bd45;
 }
 
