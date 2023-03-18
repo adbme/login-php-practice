@@ -5,7 +5,7 @@ if (isset($_POST['submit'])){
   $username = $_POST['username'];
   $password = $_POST['password'];
 
-  if ($username == "adil" && $password == "test"){
+  if ($username == "ad" && $password == "test"){
     $_SESSION["autoriser"] = "oui";
     header('Location: session.php');
 
@@ -28,7 +28,7 @@ if (isset($_POST['submit'])){
     <img src="../images/pig.gif" alt="">
   </header>
 
-  <div class="container">
+  <!-- <div class="container">
     <div class="form">
       <form method="POST" action="">
         <div class="form-group">
@@ -46,6 +46,19 @@ if (isset($_POST['submit'])){
       <div class="signup-link">
         <a href="#">Créer un compte</a>
       </div>
-      <?php if (isset($message)) { echo "<p>$message</p>"; } ?>
     </div>
-  </div>
+  </div> -->
+
+  <form method="POST" action="">
+            <h3>LOGIN</h3>
+
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="Username">
+
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Password">
+
+            <button type="submit" name="submit">Log In</button>
+           
+        </form>
+        
