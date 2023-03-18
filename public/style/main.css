@@ -116,3 +116,10 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.errorPass {
+    margin-top: 40px;
+    background-color: red;
+    padding: 10px;
+
+}

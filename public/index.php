@@ -38,6 +38,13 @@ if (isset($_POST['submit'])){
             <input type="password" name="password" placeholder="Password">
 
             <button type="submit" name="submit">Log In</button>
+            
+            <?php if (isset($message)) { ?>
+        <div class="errorPass">
+        <p><?php echo $message; ?></p>
+        </div>
+    <?php } ?>
+
            
         </form>
         
