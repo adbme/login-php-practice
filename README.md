@@ -72,5 +72,39 @@ Comme prévu le résultat est le suivant :
 
 - 4ème étape :
 
+# Commencer réélement le login :
+
+Ce login permettra de pouvoir simplement se connecter avec un profil existant et d'etre diriger sur la page session, QUE EN SE LOG. Page où l'on pourra voir le profil de la connexion et une possibilité de se déconnecter.
+
+- 1ère étape
+
+Démarer une session 
+
+
+``` PHP
+session_start();
+```
+**THEORIE**
+
+- 2ème étape
+
+vérifier le submit
+
+``` PHP
+if (isset($_POST['submit']))
+```
+
+- 3ème étape
+
+vérifier que le user et pass sont ceux que vous voulez
+
+``` PHP
+  if ($username == "adil" && $password == "test"){
+    $_SESSION["autoriser"] = "oui";
+    header('Location: session.php');
+    }
+?>
+```
+
 
 
