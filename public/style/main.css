@@ -2,15 +2,8 @@ header {
     color: #f1f1f1;
     display: flex;
     align-items: center;
+    background-color: #101010;
 }
-
-body {
-    background-color: #282828;
-}
-
-
-
-
 
 button {
 
@@ -21,24 +14,6 @@ button:hover {
     transform: scale(1.2);
     background-color: #41bd45;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 *,
 *:before,
