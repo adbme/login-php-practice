@@ -28,27 +28,6 @@ if (isset($_POST['submit'])){
     <img src="../images/pig.gif" alt="">
   </header>
 
-  <!-- <div class="container">
-    <div class="form">
-      <form method="POST" action="">
-        <div class="form-group">
-          <div class="input-div"></div>
-          <img class="images-input"  src="/images/user.png" />
-          <input type="text" name="username" placeholder="Nom d'utilisateur" />
-        </div>
-        <div class="form-group">
-          <div class="input-div"></div>
-          <img  src="/images/password.png" />
-          <input type="password" name="password" placeholder="Mot de passe" />
-        </div>
-        <button type="submit" name="submit">Se connecter</button>
-      </form>
-      <div class="signup-link">
-        <a href="#">Créer un compte</a>
-      </div>
-    </div>
-  </div> -->
-
   <form method="POST" action="">
             <h3>LOGIN</h3>
 
