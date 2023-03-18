@@ -13,7 +13,16 @@ session_start();
   if (@$_SESSION["autoriser"] != "oui"){
     header('Location: index.php');
     exit();
-  }
+
+  }      
+  $username = $_SESSION['user'];
+  $password = $_SESSION['pass'];
+
+
+
+
+    echo "Le username est : "  .$username;
+    echo "Votre mot de passe ultra sécur est : " .$password;
   ?>
 
   <h1>page session</h1>

@@ -2,8 +2,14 @@
 session_start();
 
 if (isset($_POST['submit'])){
+
+  
+
   $username = $_POST['username'];
   $password = $_POST['password'];
+$_SESSION['user'] = $username;
+$_SESSION['pass'] = $password;
+
 
   if ($username == "ad" && $password == "test"){
     $_SESSION["autoriser"] = "oui";
