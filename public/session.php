@@ -6,11 +6,11 @@ session_start();
     exit();
 
   }      
-  // $username = $_SESSION['user'];
-  // $password = $_SESSION['pass'];
+   $username = $_SESSION['user'];
+  $password = $_SESSION['pass'];
 
-  //   echo "Le username est : "  .$username;
-  //   echo "Votre mot de passe ultra sécur est : " .$password;
+//  echo "Le username est : "  .$username;
+//  echo "Votre mot de passe ultra sécur est : " .$password;
   ?>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
@@ -31,19 +31,46 @@ session_start();
     <img src="/images/session/pp.svg" class="rounded-circle" style="width: 100px; height: 100px;">
     </div>
 
-    <div class="text-center py-2 bg-dark">
-    <div class="text-white">GUEST</div>
+    <div class="text-center py-2 bg-dark"  style="margin-top:40px; border-radius : 6px;">
+    <div class="text-white" style="font-size:20px"><?php echo $username ?></div>
     </div>
 
-    <div class="text-center py-2 bg-dark">
-    <div class="text-white">*******</div>
+    <div class="text-center py-2 bg-dark" style="margin-top:40px; border-radius : 6px;">
+    <div class="text-white"> 
+      <input style="background-color: transparent; border: none; color:white; font-size:20px" style="text-decoration:none; background-color: ; width:40%" type="password" id="password" value="<?php echo $password ?>" readonly> 
+      <input style="height:20px; width:20px" type="checkbox" id="showPassword" onclick="togglePassword()">
     </div>
+ 
+    </div>
+   
 
-    <a href="https://github.com/adbme">
+<script>
+  let showPassword = false;
+
+  function togglePassword() {
+    let passwordField = document.getElementById("password");
+    let checkbox = document.getElementById("showPassword");
+    showPassword = checkbox.checked;
+
+    if (showPassword) {
+      passwordField.type = "text";
+      console.log("visible")
+    } else {
+      passwordField.type = "password";
+      console.log("pass")
+    }
+  }
+</script>
+
+
+
+
+
+   
     <div class="text-center py-3">
-    <img src="/images/session/github.svg" class="rounded" style="width: 80px; height: 80px;">
-    </div>
-    </a>
+     <a href="https://github.com/adbme"><img src="/images/session/github.svg" class="rounded" style="width: 80px; height: 80px;">
+      </a></div>
+  
 
     <div class="text-center mt-auto mb-3 align-items-end">
     <a href="deconnexion.php">
