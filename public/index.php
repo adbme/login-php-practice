@@ -11,7 +11,7 @@ $_SESSION['user'] = $username;
 $_SESSION['pass'] = $password;
 
 
-  if ($username == "ad" && $password == "test"){
+  if (($username == "ad" && $password == "test") || ($username == "invite" && $password == "ohlaruuue")){
     $_SESSION["autoriser"] = "oui";
     header('Location: session.php');
 
