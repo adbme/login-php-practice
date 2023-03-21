@@ -27,20 +27,20 @@ session_start();
     <!-- 25% -->
     <div class="col-3 p-3 d-flex flex-column" style="background-color: #101010;">
     
-    <div class="text-center py-4">
+    <div class="text-center py-4 hoverGeneral">
     <h1 class="text-white">Portal</h1>
     </div>
 
-    <div class="text-center py-3">
+    <div class="text-center py-3 hoverGeneral">
     <?php require "pp.php" ?>
     <!-- <img src="/images/session/pp.svg" class="rounded-circle" style="width: 100px; height: 100px;"> -->
     </div>
 
-    <div class="text-center py-2 bg-dark"  style="margin-top:40px; border-radius : 6px;">
+    <div class="text-center py-2 bg-dark hoverGeneral"  style="margin-top:40px; border-radius : 6px;">
     <div class="text-white" style="font-size:20px"><?php echo $username ?></div>
     </div>
 
-    <div class="text-center py-2 bg-dark" style="margin-top:40px; border-radius : 6px;">
+    <div class="text-center py-2 bg-dark hoverGeneral" style="margin-top:40px; border-radius : 6px;">
     <div class="text-white"> 
       <input style="background-color: transparent; border: none; color:white; font-size:20px" style="text-decoration:none; background-color: ; width:40%" type="password" id="password" value="<?php echo $password ?>" readonly> 
       <input style="height:20px; width:20px" type="checkbox" id="showPassword" onclick="togglePassword()">
@@ -72,13 +72,26 @@ session_start();
 
 
    
-    <div class="text-center py-3">
+    <div class="text-center py-3 hover" style="transition:0.3s">
+      <style>
+        .hover:hover{
+          transform: scale(1.2)
+        }
+      </style>
      <a href="https://github.com/adbme"><img src="/images/session/github.svg" class="rounded" style="width: 80px; height: 80px;">
       </a></div>
   
 
-    <div class="text-center mt-auto mb-3 align-items-end">
+    <div class="text-center mt-auto mb-3 align-items-end hoverLogout">
     <a href="deconnexion.php">
+    <style>
+      .hoverLogout{
+        transition:0.3s
+      }
+        .hoverLogout:hover{
+          transform: scale(1.9)
+        }
+      </style>
     <button class="btn btn-danger">Logout</button></a>
     </div>
 
@@ -89,13 +102,24 @@ session_start();
 
 
 <!-- 75% -->
+
+<style>
+         .hoverGeneral{
+          transition:0.3s
+        }
+        .hoverGeneral:hover{
+          transform: scale(1.049)
+        }
+
+      </style>
+       
     <div class="col-9 p-3" style="background-color: black;">
 
     <div class="row">
             
         <div class="col-sm-6 mt-4" >
           <a href="/pages/page.php">
-        <div class="card text-center bg-dark text-white">
+        <div class="card text-center bg-dark text-white hoverGeneral">
             <img src="/images/session/ttsrooms.svg" class="card-img img-fluid  mx-auto mt-3" style="background-color: transparent; border: none; width:88px">
             <div class="card-body">
                 
@@ -106,7 +130,7 @@ session_start();
 
         <div class="col-sm-6 mt-4">
           <a href="/pages/page.php">
-        <div class="card text-center bg-dark text-white">
+        <div class="card text-center bg-dark text-white hoverGeneral">
             <img src="/images/session/sharestorm.svg" class="card-img img-fluid mx-auto mt-3" style="background-color: transparent; border: none; width:100px">
             <div class="card-body">
                 
@@ -122,7 +146,7 @@ session_start();
             
         <div class="col-sm-6 mt-4">
           <a href="/pages/page.php">
-        <div class="card text-center bg-dark text-white">
+        <div class="card text-center bg-dark text-white hoverGeneral">
             <img src="/images/session/gherbi.svg" class="card-img img-fluid  mx-auto mt-3" style="background-color: transparent; border: none; width:140px">
             <div class="card-body">
                 
@@ -133,7 +157,7 @@ session_start();
 
         <div class="col-sm-6 mt-4" >
           <a href="/pages/page.php">
-        <div class="card text-center bg-dark text-white">
+        <div class="card text-center bg-dark text-white hoverGeneral">
             <img src="/images/session/tts.svg" class="card-img img-fluid  mx-auto mt-3" style="background-color: transparent; border: none;width:88px">
             <div class="card-body">
                 
@@ -149,7 +173,7 @@ session_start();
             
         <div class="col-sm-6 mt-4">
           <a href="/pages/page.php">
-        <div class="card text-center bg-dark text-white">
+        <div class="card text-center bg-dark text-white hoverGeneral">
             <img src="/images/session/shonentime.svg" class="card-img img-fluid  mx-auto mt-3" style="background-color: transparent; border: none; width:190px; padding:20px">
             <div class="card-body">
                 
@@ -160,7 +184,7 @@ session_start();
 
         <div class="col-sm-6 mt-4">
           
-        <div class="card text-center bg-dark text-white" style="height:150px;">
+        <div class="card text-center bg-dark text-white hoverGeneral" style="height:150px;">
             <h1>...</h1>
             <div class="card-body">
  
